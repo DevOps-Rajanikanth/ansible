@@ -1,4 +1,4 @@
-- name: instal- name: install and run nginx
+- name: install and run nginx
   hosts: web
   become: yes #it will get root access
   tasks:
@@ -10,11 +10,3 @@
     ansible.builtin.service:
       name: nginx
       state: started
-
-
-- name: install and run nginx
-  hosts: web
-  become: yes # it will grt sudo access
-  tasks:
-   - name: intsal nginx package
-     
