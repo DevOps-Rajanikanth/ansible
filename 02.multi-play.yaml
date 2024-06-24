@@ -2,7 +2,7 @@
   become: yes
   hosts: localhost
   tasks:
-  - name: PlayBook1 and Task1
+   - name: PlayBook1 and Task1
     ansible.builtin.debug:
     msg: "Hello From Play1 task1"
 
