@@ -58,5 +58,4 @@
   - name: print boolean
     ansible.builtin.debug:
       msg: "is he Trainer: {{Trainer}}"
-        msg: " trainer are {{Trainer}}
-"
+        msg: " trainer are {{Trainer}}"
