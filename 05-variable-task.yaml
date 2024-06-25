@@ -6,7 +6,7 @@
   tasks:
     - name: check varibles
       vars:
-      Course: Aws with Devops
-      duration: 150hr
+        Course: Aws with Devops
+        duration: 150hr
       ansible.builtin.debug:
-      msg: "I'm Learning {{Course}} course, Duration is {{duration}}"
+        msg: "I'm Learning {{Course}} course, Duration is {{duration}}"
