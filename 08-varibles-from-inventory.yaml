@@ -1,0 +1,6 @@
+- name: Varibles from play level
+  hosts: localhost
+  tasks:
+  - name: check the varibles from inventory file
+    ansible.builtin.debug:
+      msg: "I'm Learing {{Course}} cousre, Trainer is {{Trainer}}, Duration of the course is {{Duration}}"

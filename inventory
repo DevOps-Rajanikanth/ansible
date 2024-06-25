@@ -4,6 +4,11 @@
 [localhost]
 localhost
 
+[localhost:vars]
+Course: AWS with DevOps
+Duration: 110HR
+Trainer: Siva
+
 [web]
 54.86.154.163
 
