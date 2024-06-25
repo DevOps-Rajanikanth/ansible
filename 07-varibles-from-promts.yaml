@@ -11,3 +11,4 @@
     - name: check and print the names
     ansible.builtin.debug:
       msg: "User name {{USERNAME}}, password is {{PASSWORD}}"
+      
