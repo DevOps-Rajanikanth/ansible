@@ -1,30 +1,33 @@
-- name: checking data types
+- name: Data types
   hosts: localhost
   vars:
-    NAME: Sivakumar # key value
-    Skills: #Skills is a list type
+    NAME: Rajanikanth
+    Skills:
     - DevOps
-    - Shell
+    - AWS
     - ANsible
-    - Linux
-    Experience: # Experience is map type. It contains key value pairs
-      DevOps: 7
-      AWS: 6
-      Docker: 4
-    Trainer: true # boolean
+    - Terraform
+    - Docker
+    - K8
+    Experience:
+      DevOps: 3
+      AWS: 3
+      ANsible: 3
+    Trainer: false
   tasks:
-  - name: print key value pair
-    ansible.builtin.debug:
-      msg: "name: {{NAME}}"
-
-  - name: print list
-    ansible.builtin.debug:
-      msg: "Skills: {{Skills}}"
+    - name: Print keyvalue pair
+      ansible.builtin.debug:
+        msg: "name is {{NAME}}"
   
-  - name: print map
-    ansible.builtin.debug:
-      msg: "Experience: {{Experience}}"
+    - name: Print from list
+      ansible.builtin.debug:
+        msg: "skill is {{Skills}}"
 
-  - name: print boolean
-    ansible.builtin.debug:
-      msg: "is he Trainer: {{Trainer}}"
+    - name: Print from map
+      ansible.builtin.debug:
+        msg: " experience is {{Experience}}"
+    
+    - name: Print from liBooleanst
+      ansible.builtin.debug:
+        msg: " trainer are {{Trainer}}
+"
