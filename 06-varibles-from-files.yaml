@@ -1,4 +1,4 @@
-- name: varibles from files
+- name: varibles from playlevel
   hosts: localhost
   vars_files:
       - variables.yaml
