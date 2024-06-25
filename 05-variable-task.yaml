@@ -1,0 +1,12 @@
+- name: varibles from  playlevel
+  hosts: localhost
+  vars:
+    Course: DevOps
+    duration: 110hr
+  tasks:
+    - name: check varibles
+      vars:
+      Course: Aws with Devops
+      duration: 150hr
+    ansible.builtin.debug:
+      msg: "I'm Learning {{Course}} course, Duration is {{duration}}"
