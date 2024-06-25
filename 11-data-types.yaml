@@ -26,13 +26,13 @@
   
     - name: Print from list
       ansible.builtin.debug:
-        msg: {{Skills}}
+      msg: "{{Skills}}"
 
     - name: Print from map
       ansible.builtin.debug:
-        msg: {{Experience}}
+        msg: "{{Experience}}"
     
     - name: Print from liBooleanst
       ansible.builtin.debug:
-        msg: {{Trainer}}
-
+        msg: "{{Trainer}}
+"
