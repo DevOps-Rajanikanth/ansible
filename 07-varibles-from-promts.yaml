@@ -1,14 +1,14 @@
 - name: Varibles from playlevel
   hosts: localhost
   vars_promt:
-    - name: USERNAME
-      promt: Please enter user
-      private: false
-    - name: PASSWORD
-      promt: enter password
-      private: true
-  tasks:
-    - name: check and print the names
-      ansible.builtin.debug:
-        msg: "User name {{USERNAME}}, password is {{PASSWORD}}"
+  - name: USERNAME
+    promt: Please enter user
+    private: false
+  - name: PASSWORD
+    promt: enter password
+    private: true
+    tasks:
+  - name: check and print the names
+    ansible.builtin.debug:
+      msg: "User name {{USERNAME}}, password is {{PASSWORD}}"
 
