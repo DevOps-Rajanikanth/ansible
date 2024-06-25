@@ -22,17 +22,17 @@
   tasks:
     - name: Print keyvalue pair
       ansible.builtin.debug:
-        msg: "{{NAME}}"
+        msg: "name is {{NAME}}"
   
     - name: Print from list
       ansible.builtin.debug:
-        msg: "{{Skills}}"
+        msg: "skill is {{Skills}}"
 
     - name: Print from map
       ansible.builtin.debug:
-        msg: "{{Experience}}"
+        msg: " experience is {{Experience}}"
     
     - name: Print from liBooleanst
       ansible.builtin.debug:
-        msg: "{{Trainer}}
+        msg: " trainer are {{Trainer}}
 "
