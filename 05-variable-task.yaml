@@ -8,5 +8,5 @@
       vars:
       Course: Aws with Devops
       duration: 150hr
-    ansible.builtin.debug:
+      ansible.builtin.debug:
       msg: "I'm Learning {{Course}} course, Duration is {{duration}}"
