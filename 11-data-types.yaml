@@ -4,7 +4,7 @@
 # Boolean
 
 - name: Data types
-  hosts:
+  hosts: localhost
   vars:
     NAME: Rajanikanth
     Skills:
