@@ -1,8 +1,3 @@
-# List
-# keyvalue pair
-# Map
-# Boolean
-
 - name: Data types
   hosts: localhost
   vars:
