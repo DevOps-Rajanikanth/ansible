@@ -2,5 +2,5 @@
   hosts:
   tasks:
   - name: check the varibles from arguments
-    ansible.builtin.debug
-      msg: "I'm learing the course {{Course}}, Duration is {{Duration}}"
+  ansible.builtin.debug:
+    msg: "I'm learing the course {{Course}}, Duration is {{Duration}}"
