@@ -1,6 +1,6 @@
-- name: Varibles from PLAY Leval
-  hosts:
+- name: variables from PLAY level
+  hosts: localhost
   tasks:
-  - name: check the varibles from arguments
+  - name: check variables
     ansible.builtin.debug:
-      msg: "I'm learing the course {{Course}}, Duration is {{Duration}}"
+      msg: "Hello {{PERSON}}, Good {{WISHES}}"
