@@ -1,0 +1,6 @@
+- name: Varibles from PLAY Leval
+  hosts:
+  tasks:
+  - name: check the varibles from arguments
+  ansible.builtin.debug
+    msg: "I'm learing the course {{Course}}, Duration is {{Duration}}"
