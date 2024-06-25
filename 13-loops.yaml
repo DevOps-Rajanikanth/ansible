@@ -5,7 +5,7 @@
     ansible.builtin.debug:
       msg: "Hello {{item}}" # item is a default keyword
     loop:
-    - Ramesh
-    - Suresh
-    - Robert
-    - Raheem
+    - Rajanikanth
+    - Priyanka
+    - Rajani
+    - Priya
