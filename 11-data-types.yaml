@@ -1,0 +1,38 @@
+# List
+# keyvalue pair
+# Map
+# Boolean
+
+- name: Data types
+  hosts:
+  vars:
+    NAME: Rajanikanth
+    Skills:
+    - DevOps
+    - AWS
+    - ANsible
+    - Terraform
+    - Docker
+    - K8
+    Experience:
+      DevOps: 3
+      AWS: 3
+      ANsible: 3
+    Trainer: false
+  tasks:
+    - name: Print keyvalue pair
+      ansible.builtin.debug:
+        msg: "{{NAME}}"
+  
+    - name: Print from list
+      ansible.builtin.debug:
+        msg: {{Skills}}
+
+    - name: Print from map
+      ansible.builtin.debug:
+        msg: {{Experience}}
+    
+    - name: Print from liBooleanst
+      ansible.builtin.debug:
+        msg: {{Trainer}}
+
